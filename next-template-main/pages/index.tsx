@@ -4,9 +4,8 @@ import React from 'react';
 import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
 import NavBar from '../components/NavBar';
+import Card from '../components/Card';
 
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -16,11 +15,42 @@ export default function Home() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
     </Head><NavBar />
-    <div id='A propos' className='bg-[#E0E1E6] text-[#50524A] w-screen h-screen'>
-        <div className='flex justify-start items-center font-serif text-4xl h-[30%] mx-12'>
-          Bonjour ! Je suis Abdelqodousse Boustani
 
+    <div id='A propos' className='bg-[#293845] text-[#C2CBD2] w-screen h-screen'>
+        <div className='flex justify-start items-center font-serif text-4xl h-[30%] mx-12 '>
+          Bonjour ! Je suis Abdelqodousse Boustani
         </div>
+        <article className="prose lg:prose-xl ">
+  <h1 className='flex justify-start items-center font-serif text-4xl h-[30%] mx-12'>A propos</h1>
+  <p className='w-[50%] mt-4 mx-12'>
+    For years parents have espoused the health benefits of eating garlic bread with cheese to their
+    children, with the food earning such an iconic status in our culture that kids will often dress
+    up as warm, cheesy loaf for Halloween.
+    <img className='absolute h-fit top-[20%] right-[2%] animate-pulse' src="https://ythwitum.sirv.com/Images/Code%20Development%20_Flatline.svg"/>
+    <a href='CV.pdf' className="flex items-center h-9 w-32 mt-4 ml-4 py-2 px-5 border-2 bg-[#C2CBD2] border-black hover:bg-[#616175] text-[#293845] hover:text-[#DDE0EA] font-serif rounded space-x-2" type="button">
+  <svg width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" role="img"><path d="M12.372 7.289l-4.405 4.416a.357.357 0 01-.506 0L3.057 7.29a.357.357 0 010-.506l.583-.584a.353.353 0 01.509.006l2.788 2.89V1.69c0-.196.161-.357.358-.357h.833c.196 0 .357.161.357.357v7.405l2.789-2.89a.358.358 0 01.509-.006l.583.584c.146.14.146.366.006.506zm.7 5.83H2.356a.358.358 0 00-.357.357v.833c0 .197.16.358.357.358h10.714c.197 0 .358-.161.358-.357v-.834a.358.358 0 00-.358-.357z" /></svg>
+  <span className="text-sm font-semi-bold">Mon CV</span>
+</a>
+  </p>
+  <h1 className='flex justify-start items-center font-serif text-4xl h-[30%] mx-12 mt-4'>Compétences</h1>
+  <p className='w-[50%] mt-4 mx-12' >
+    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+    springing up around the country.
+  </p>
+  <h1 className='flex justify-start items-center font-serif text-4xl h-[30%] mx-12 mt-4'>Projets</h1>
+  <div className='flex flex-row gap-4 mt-4 h-auto mx-12'>
+     <Card /> 
+     <Card />
+     <Card />
+     <Card />
+     <Card /> 
+  </div>
+  <h1 className='flex justify-start items-center font-serif text-4xl h-[30%] mx-12 mt-4'>Projets</h1>
+  <p className='w-[50%] mt-4 mx-12' >
+    But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+    springing up around the country.
+  </p>
+</article>
       </div></>
   );
 }
